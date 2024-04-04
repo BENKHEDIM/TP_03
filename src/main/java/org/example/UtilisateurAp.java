@@ -1,5 +1,5 @@
 package org.example;
 
-public interface UtilisateurApi {
+public interface UtilisateurAp {
     void creerUtilisateur(Utilisateur utilisateur) throws ServiceException;
 }

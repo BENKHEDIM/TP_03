@@ -6,19 +6,19 @@ import org.mockito.junit.MockitoJUnitRunner;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestMockAPIUtilisateurExo03 {
+public class TestMockAPUtilisateur {
     @Mock
-    private UtilisateurApi utilisateurApiMock;
+    private UtilisateurAp utilisateurApMock;
     @Test
     public void testCreerUtilisateur() throws ServiceException {
         // Création d'un nouvel utilisateur
         Utilisateur utilisateur = new Utilisateur("Jean", "Dupont", "jeandupont@email.com");
 
         // TODO : Configuration du comportement du mock, utiliser la directive « when » avec sa méthode « thenReturn »
-        doNothing().when(utilisateurApiMock).creerUtilisateur(utilisateur);
+        doNothing().when(utilisateurApMock).creerUtilisateur(utilisateur);
 
         // TODO : Création du service avec le mock
-        UserService userService = new UserService(utilisateurApiMock);
+        UserService userService = new UserService(utilisateurApMock);
 
         // TODO : Appel de la méthode à tester
         try {
@@ -28,6 +28,6 @@ public class TestMockAPIUtilisateurExo03 {
         }
 
         // TODO : Vérification de l'appel à l'API
-        verify(utilisateurApiMock, times(1)).creerUtilisateur(utilisateur);
+        verify(utilisateurApMock, times(1)).creerUtilisateur(utilisateur);
     }
 }

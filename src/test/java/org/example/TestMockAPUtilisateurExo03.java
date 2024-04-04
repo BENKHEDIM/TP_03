@@ -6,9 +6,9 @@ import org.mockito.junit.MockitoJUnitRunner;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TestMockAPIUtilisateur {
+public class TestMockAPUtilisateurExo03 {
     @Mock
-    private UtilisateurApi utilisateurApiMock;
+    private UtilisateurAp utilisateurApiMock;
     @Test
     public void testCreerUtilisateur() throws ServiceException {
         // Création d'un nouvel utilisateur

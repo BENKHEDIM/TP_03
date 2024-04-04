@@ -1,8 +1,8 @@
 package org.example;
 
 public class UserService {
-    private final UtilisateurApi utilisateurApi;
-    public UserService(UtilisateurApi utilisateurApi) {
+    private final UtilisateurAp utilisateurApi;
+    public UserService(UtilisateurAp utilisateurApi) {
         this.utilisateurApi = utilisateurApi;
     }
     public void creerUtilisateur(Utilisateur utilisateur) throws
